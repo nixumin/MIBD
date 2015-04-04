@@ -16,9 +16,9 @@ function [popsize, mig] = Grid_Search(N_lo, N_hi, N_step, m_lo, m_hi, m_step, cu
 %    - popzise          - the effective population size 
 %    - mig              - the migration rate
 %
-% test 
-% [popsize, mig]=Grid_Search(15000,16000,10,0.0001,0.001,0.00001,0.01,[0.005832 0.000649])
-% Output: popsize=15370;mig=8.1000e-004.
+% test: 
+% [N,m]=Grid_Search(5000,15000,10,0.0001,0.01,0.0001,0.02,[0.0046405 0.0003355])
+% Output: N =10030; m=1.0000e-003.
 %--------------------------------------------------------------------------
 m = m_lo : m_step : m_hi;
 n = N_lo : N_step : N_hi;
